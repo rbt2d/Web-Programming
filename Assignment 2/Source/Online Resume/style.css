@@ -1,0 +1,27 @@
+#nav-bar{
+ margin-top:20px;
+    margin-right: 30px;
+position: absolute;
+    right:10px;
+}
+#photo{
+
+    margin-left:700px;
+}
+.flex-container {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: row-reverse;
+    flex-direction: row;
+    width: 1500px;
+    height: 35px;
+    background-color: lightgrey;
+}
+
+.flex-item {
+    background-color: #DCDCDC;
+    width: 300px;
+    height: 25px;
+    margin: 10px;
+
+}
