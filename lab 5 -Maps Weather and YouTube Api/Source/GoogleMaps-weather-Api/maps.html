@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en" data-ng-app="GoogleDirection">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maps,Weather and YouTubeApi</title>
+    <link rel="stylesheet" href="Style.css" type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.4/angular.min.js" type="application/javascript"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAWhSE1HAi753_M8rcFTfcbBXUQInf8y6c&v=3.exp"></script>
+    <script src="app.js"></script>
+
+    <script src="https://apis.google.com/js/client.js?onload=onClientLoad" type="text/javascript"></script>
+</head>
+<body bgcolor="#f8f8ff">
+<div class="wrap">
+    <div class="floatleft">
+       <!--Google Maps -->
+        <h1>Google Maps</h1>
+
+        <div class="wrapp" ng-controller="googlemaps">
+            <div class="row">
+                <b>Source Place:</b>
+                <input type="text" placeholder="Enter source place" ng-model="startlocation" id="source_loc"/>
+                <b>Destination Place:</b>
+                <input type="text" placeholder="Enter destination place" ng-model="endlocation" id="des_loc" />
+                <button class="button" id="btn" ng-click="calcRoute()">
+                    <b>Get Direction</b>
+                  </button>
+               <br><br>
+            </div>
+            <div id="map-canvas" style="height: 400px;"></div>
+        </div>
+<div class="table">
+        <h1>Weather Service</h1>
+<table>
+        <!--Source weather-->
+      <td>
+          <div ng-controller="weatherCtrl">
+
+            <form>
+                <div class="form-group">
+                    <input class="button" type="submit" value="Source Weather" ng-click="findWeather(zip)" />
+                </div>
+            </form>
+            <p ng-show="zip">Searching the forecasts for: {{zip}}</p>
+            <div>
+                <h2><i>{{ place.location.city }}  Forecast </i></h2>
+                <h3><img class="img-thumbnail forecast-img" src="http://l.yimg.com/a/i/us/we/52/{{place.item.condition.code}}.gif" />Current: {{ place.item.condition.text }} | {{ place.item.condition.temp }}F</h3>
+            </div>
+         </div>
+      </td>
+    <br><br>
+      <td>
+    <!--Destination weather-->
+        <div   data-ng-controller="weatherCtrl1">
+            <input class="button"  type="submit" value="Destination Weather" ng-click="findWeather()" />
+            <div>
+                <h2><i>{{ place.location.city }}  Forecast </i></h2>
+                <h3><img class="img-thumbnail forecast-img" src="http://l.yimg.com/a/i/us/we/52/{{place.item.condition.code}}.gif" />Current: {{ place.item.condition.text }} | {{ place.item.condition.temp }}F</h3>
+            </div>
+        </div>
+      </td>
+
+</table>
+</div>
+    </div>
+
+
+</div>
+    </div>
+</body>
+</html>
