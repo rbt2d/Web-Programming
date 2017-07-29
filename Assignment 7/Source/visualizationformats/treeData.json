@@ -1,0 +1,110 @@
+{
+  "name": "HiraChand Govardhandas Ambani ",
+  "parent": "US",
+  "children": [
+    {
+      "name": "Ramniklal",
+      "parent": "US",
+      "children": [
+        {
+          "name": "vimal",
+          "parent": "University of Missouri System"
+        },
+        {
+          "name": "Nita M .Patel",
+          "parent": "University of Missouri System"
+        },
+        {
+          "name": "Ila S Dalal",
+          "parent": "University of Missouri System"
+        },
+        {
+          "name": "Meena R Ambani",
+          "parent": "University of Missouri System"
+        }
+      ]
+    },
+    {
+      "name": "Dhirubai Ambani",
+      "parent": "US",
+      "children": [
+        {
+          "name": "Mukesh",
+          "parent": "Princeton University"
+        },
+        {
+          "name": "Anil",
+          "parent": "Princeton University"
+        },
+        {
+          "name": "Nina",
+          "parent": "Princeton University"
+        },
+        {
+          "name": "Dipti",
+          "parent": "Princeton University"
+        }
+      ]
+    },
+    {
+      "name": "Natwarlal",
+      "parent": "US",
+      "children": [
+        {
+          "name": "Vipul",
+          "parent": "Natwarlal"
+        },
+        {
+          "name": "Niraj",
+          "parent": "Natwarlal"
+        },
+        {
+          "name": "Amita R Sheth",
+          "parent": "Natwarlal"
+        },{
+          "name": "Dina S.Amin",
+          "parent": "Natwarlal"
+        }
+      ]
+    },
+    {
+      "name": "Trilochanaben",
+      "parent": "US",
+      "children": [
+        {
+          "name": "Rasiklal L.Meshwani",
+          "parent": "Trilochanaben"
+        },
+        {
+          "name": "Nikhil",
+          "parent": "Trilochanaben"
+        },
+        {
+          "name": "Vita J Dani",
+          "parent": "Trilochanaben"
+        }
+      ]
+    },
+    {
+      "name": "Jasumatibem",
+      "parent": "US",
+      "children": [
+        {
+          "name": "Viren B.Patel",
+          "parent": "Yale University"
+        },
+        {
+          "name": "Atal B.Patel",
+          "parent": "Trilochanaben"
+        },
+        {
+          "name": "Bimal B.Patel",
+          "parent": "Trilochanaben"
+        }, {
+          "name": "Manish B.Patel",
+          "parent": "Trilochanaben"
+        }
+      ]
+    }
+  ]
+}
